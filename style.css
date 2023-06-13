@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap%27');
+
+body{
+    font-family: 'Caveat';
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 2s ease-in-out;
+}
+
+.modal{
+    background-color: aliceblue;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 2s ease-in-out;
+}
+
+.modal_header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+img{
+    width: 20px;
+}
+
+.modal_form{
+    padding: 15px 10px;
+}
+
+.modal__name, .modal__surname{
+    width: 300px;
+    display: block;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+span{
+    font-size: 40px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.button button{
+    cursor: pointer;
+}
+
+.active{
+    opacity: 1;
+    visibility: visible;
+}
